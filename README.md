@@ -1,9 +1,9 @@
 # multi-market-stock-api
 
-全球股票、外汇、指数数据接口示例
+印度与东南亚市场股票、外汇、指数数据接口示例
 
 ## 项目定位
-本仓库聚焦「指数API」接入落地，面向以下场景：
+本仓库聚焦「印度东南亚行情API」接入落地，面向以下场景：
 - 量化交易策略实时订阅与告警
 - 行情看板与交易终端前端展示
 - 研究系统历史 K 线回测与因子验证
@@ -34,6 +34,11 @@
 完整与最新清单请以官方页面为准：
 - [https://kun.pro/products](https://kun.pro/products)
 
+## 本仓库重点市场
+- 主区域：南亚与东南亚
+- 重点国家/市场：印度(IN)、新加坡(SG)、马来西亚(MY)、越南(VN)、泰国(TH)
+- 重点交易所：NSE、BSE、SGX、MYX、HOSE、SET
+
 ## Quick Start
 1. 获取访问 Token 并确认鉴权方式
 2. 选择接入方式（WebSocket 或 REST）
@@ -42,21 +47,22 @@
 
 ## 最小请求示例
 ### REST 示例（历史 K 线）
-<code>GET https://kun.pro/api/history?market=KR&symbol=KRX:000040&interval=1&count=200</code>
+<code>GET https://kun.pro/api/history?market=IN&symbol=NSE:RELIANCE&interval=1&count=200</code>
 <code>Authorization: Bearer YOUR_TOKEN</code>
 
 ### WebSocket 示例（实时订阅）
 <code>wss://kun.pro/ws?token=YOUR_TOKEN</code>
-<code>{"action":"subscribe","market":"KR","symbol":"KRX:000040"}</code>
+<code>{"action":"subscribe","market":"IN","symbol":"NSE:RELIANCE"}</code>
 
 ## 关键词与主题
-- keyword: 指数API
-- topics:stock-api, forex-api, indices-api, market-data
+- keyword: 印度东南亚行情API
+- topics:stock-api, forex-api, indices-api, market-data, in-market, sea-market
 
 ## 文档与接入
 - 开发文档中心：[https://kun.pro/docs.html](https://kun.pro/docs.html)
 - 官网入口：[https://kun.pro](https://kun.pro?utm_campaign=kun_pro_api_seo&utm_content=shenfu8_multi-market-stock-api&utm_medium=readme&utm_source=github)
 - 接入咨询：请通过官网页面提交需求（支持 API 评估与接入建议）
+- Telegram：[@kunpeng](https://t.me/kunpeng)
 
 ## 推荐关键词（站点统一）
 - 鯤鵬數據 API
